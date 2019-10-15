@@ -1,0 +1,165 @@
+@import '/Estilos/variables.css' ;
+*{
+    margin: 0px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* Header */
+h1{
+    font-family: 'Boogaloo', cursive;
+    color: var(--color-de-fuentes);
+    margin: 10px;
+     text-shadow: 6px 5px 6px gray;
+     font-size: 30px;   
+}
+.nav-enlaces{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-de-fuentes);
+    margin: 10px;
+    padding: 5px;
+}
+nav{
+    background: var(--color-bg);
+    font-size: 18px;
+    display: flex;
+}
+/* Img y titulo */
+.titulo figure img {
+    height: 500px;
+    width: 100%;
+}
+.descripcion-img-titulo {
+    background: var(--color-fondo-desc);
+    height: 100px;
+    width: 800px;
+    border-radius: 30px;
+    position: absolute;
+    top:12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.6;
+    padding: 4px;
+}
+.titulo h2{
+    font-size: 40px;
+    font-family: 'Magra', sans-serif;
+    text-align: center;
+    color:var(--color-de-fuentes);
+    text-shadow: 5px 5px 5px black;
+}
+.titulo p{
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;   
+}
+/* Seccion Principal */
+
+main img{
+    width: 290px;
+    height: 260px;
+    border-radius: 35px;
+}
+h3{
+    font-size: 55px;
+}
+.playa-desc , .rio-desc, .parques-desc{
+    width: 230px;
+    height: 200px;
+    font-family: 'Boogaloo', cursive;
+    border-radius: 50px;
+}
+
+.main-contenedor img{
+    opacity: 0.8;
+}  
+.main-contenedor img:hover{
+    filter: saturate(2);
+    width: 300px;
+    height: 280px;
+    transition-duration: 0.5;
+}
+.main-contenedor{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33% 33%;
+}
+
+/* Seccion Contacto */
+.contenedor-contacto{
+    background-color: var(--color-bg-contacto);
+    margin-top: 50px;
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+#contacto{
+    margin-left: 20%;
+    font-size: 22px;
+    border: 2px solid var(--color-celeste);
+    border-radius: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 70%;
+    text-align: center;
+    color: var(--color-de-fuentes);
+}
+form{
+    color: var(--color-de-fuentes);
+    text-align: center;
+    border: 2px solid var(--color-celeste);
+    border-radius: 10px;
+    width: 70%;
+    padding: 10px;
+    height: 90%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+input{
+    background-color:var(--color-bg-contacto);
+    border: none;
+    border-bottom: 2px solid var(--color-celeste);
+    width: 100%;
+}
+input[type~=submit]{
+    padding: 5px;
+    background-color:var(--color-celeste);
+    margin-bottom: 10px;
+    color: var(--color-de-fuentes);
+    border: 1px solid var(--color-celeste);
+}
+
+.formulario p {
+    text-align: left;
+}
+/* Seccion Footer */
+footer{
+    padding: 20px;
+    background:var(--color-bg);
+    color: var(--color-de-fuentes);
+    height: 30px;
+    text-align: center;
+    
+  
+}
+footer a{
+    text-decoration: none;
+    list-style: none;
+    color: var(--color-de-fuentes);
+
+}
+
+textarea{
+    background-color: var(--color-bg-contacto);
+    border-color:var(--color-celeste);
+    width: 100%;
+    color:var(--color-de-fuentes);
+    font-size: 16px;
+}
+/* Media Queris */
+@media (min-width:479px){
+    contenedor-contacto{
+        display: none;
+    }    
+
+}
