@@ -1,7 +1,9 @@
 :root{
    --color-celeste:#288ece;
-   --color-bg:#1b2127;
+   --color-bg:#b54438;
    --color-fondo-desc:#6d81b1;
    --color-de-fuentes:#fff;
    --color-bg-contacto:#1c3642;
+   --color-body1:rgb(230, 230, 230);
+   --color-body2:rgb(239, 249, 234);
 }

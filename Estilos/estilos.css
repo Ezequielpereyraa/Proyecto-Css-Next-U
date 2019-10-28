@@ -1,165 +1,375 @@
-@import '/Estilos/variables.css' ;
-*{
-    margin: 0px;
+@import "/Estilos/variables.css";
+* {
+  margin: 0px;
 }
-body{
-    font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
 }
 /* Header */
-h1{
-    font-family: 'Boogaloo', cursive;
-    color: var(--color-de-fuentes);
-    margin: 10px;
-     text-shadow: 6px 5px 6px gray;
-     font-size: 30px;   
+h1 {
+  font-family: "Boogaloo", cursive;
+  color: var(--color-de-fuentes);
+  margin-top: 10px;
+  margin-left: 1%;
+  text-shadow: 6px 5px 6px gray;
+ 
 }
-.nav-enlaces{
-    display: inline-block;
-    text-decoration: none;
-    color: var(--color-de-fuentes);
-    margin: 10px;
-    padding: 5px;
+.nav-enlaces {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-de-fuentes);
+  margin: 10px;
+  padding: 5px;
 }
-nav{
-    background: var(--color-bg);
-    font-size: 18px;
-    display: flex;
+nav {
+  background: var(--color-bg);
+  font-size: 18px;
+  display: flex;
 }
 /* Img y titulo */
 .titulo figure img {
-    height: 500px;
-    width: 100%;
+  height: 620px;
+  width: 100%;
 }
 .descripcion-img-titulo {
-    background: var(--color-fondo-desc);
-    height: 100px;
-    width: 800px;
-    border-radius: 30px;
-    position: absolute;
-    top:12%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.6;
-    padding: 4px;
+  background: var(--color-fondo-desc);
+  height: 100px;
+  width: 800px;
+  border-radius: 30px;
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.7;
+  padding: 4px;
 }
-.titulo h2{
-    font-size: 40px;
-    font-family: 'Magra', sans-serif;
-    text-align: center;
-    color:var(--color-de-fuentes);
-    text-shadow: 5px 5px 5px black;
+.titulo h2 {
+  font-size: 40px;
+  font-family: "Magra", sans-serif;
+  text-align: center;
+  color: var(--color-de-fuentes);
+  text-shadow: 5px 5px 5px black;
 }
-.titulo p{
-    text-align: center;
-    font-size: 23px;
-    font-weight: bold;   
+.titulo p {
+  text-align: center;
+  font-size: 23px;
+  font-weight: bold;
 }
 /* Seccion Principal */
 
-main img{
-    width: 290px;
-    height: 260px;
-    border-radius: 35px;
+main img {
+  width: 290px;
+  height: 260px;
+  border-radius: 35px;
+  filter: opacity(0.9);
 }
-h3{
-    font-size: 55px;
-}
-.playa-desc , .rio-desc, .parques-desc{
-    width: 230px;
-    height: 200px;
-    font-family: 'Boogaloo', cursive;
-    border-radius: 50px;
-}
-
-.main-contenedor img{
-    opacity: 0.8;
-}  
-.main-contenedor img:hover{
-    filter: saturate(2);
-    width: 300px;
-    height: 280px;
-    transition-duration: 0.5;
-}
-.main-contenedor{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 33% 33% 33% 33%;
+.playa-desc,
+.rio-desc,
+.parques-desc {
+  width: 230px;
+  height: 200px;
+  font-family: "Boogaloo", cursive;
+  border-radius: 50px;
 }
 
+.main-contenedor img {
+  opacity: 0.8;
+}
 /* Seccion Contacto */
-.contenedor-contacto{
-    background-color: var(--color-bg-contacto);
-    margin-top: 50px;
-    display:grid;
-    grid-template-columns: 50% 50%;
+.contenedor-contacto {
+  background-color: var(--color-bg-contacto);
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
-#contacto{
-    margin-left: 20%;
-    font-size: 22px;
-    border: 2px solid var(--color-celeste);
-    border-radius: 50px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: 70%;
-    text-align: center;
-    color: var(--color-de-fuentes);
+#contacto {
+  margin-left: 20%;
+  font-size: 22px;
+  border: 2px solid var(--color-celeste);
+  border-radius: 50px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 70%;
+  text-align: center;
+  color: var(--color-de-fuentes);
 }
-form{
-    color: var(--color-de-fuentes);
-    text-align: center;
-    border: 2px solid var(--color-celeste);
-    border-radius: 10px;
-    width: 70%;
-    padding: 10px;
-    height: 90%;
-    margin-top: 15px;
-    margin-bottom: 15px;
+form {
+  color: var(--color-de-fuentes);
+  text-align: center;
+  border: 2px solid var(--color-celeste);
+  border-radius: 10px;
+  width: 70%;
+  padding: 10px;
+  height: 90%;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
-input{
-    background-color:var(--color-bg-contacto);
-    border: none;
-    border-bottom: 2px solid var(--color-celeste);
-    width: 100%;
+input {
+  background-color: var(--color-bg-contacto);
+  border: none;
+  border-bottom: 2px solid var(--color-celeste);
+  width: 100%;
+  color: var(--color-de-fuentes);
+  font-size: 16px;
 }
-input[type~=submit]{
-    padding: 5px;
-    background-color:var(--color-celeste);
-    margin-bottom: 10px;
-    color: var(--color-de-fuentes);
-    border: 1px solid var(--color-celeste);
+input[type~="submit"] {
+  padding: 5px;
+  background-color: var(--color-celeste);
+  margin-bottom: 10px;
+  color: var(--color-de-fuentes);
+  border: 1px solid var(--color-celeste);
 }
 
 .formulario p {
-    text-align: left;
+  text-align: left;
+}
+textarea {
+  background-color: var(--color-bg-contacto);
+  border-color: var(--color-celeste);
+  width: 100%;
+  color: var(--color-de-fuentes);
+  font-size: 16px;
 }
 /* Seccion Footer */
-footer{
-    padding: 20px;
-    background:var(--color-bg);
-    color: var(--color-de-fuentes);
-    height: 30px;
-    text-align: center;
-    
+footer {
+  padding: 20px;
+  background: var(--color-bg);
+  color: var(--color-de-fuentes);
+  height: 30px;
+  text-align: center;
+}
+footer a {
+  text-decoration: none;
+  list-style: none;
+  color: var(--color-de-fuentes);
+}
+/* Media Queries */
+@media (min-width: 320px) and (max-width: 480px)  {
   
-}
-footer a{
-    text-decoration: none;
-    list-style: none;
-    color: var(--color-de-fuentes);
-
-}
-
-textarea{
-    background-color: var(--color-bg-contacto);
-    border-color:var(--color-celeste);
+  body {
+    background:var(--color-body1);
+  }
+  nav {
+    display: block;
+    text-align: center;
+    font-size: 13px;
+  }
+  .descripcion-img-titulo {
+    background: var(--color-fondo-desc);
+    height: 100px;
+    width: 298px;
+    position: absolute;
+    top: 20%;
+    left: 53%;
+  }
+  .titulo h2 {
+    font-size: 25px;
+  }
+  .titulo p {
+    font-size: 14px;
+  }
+  .main-contenedor {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .rio-img1 {
+    display: none;
+  }
+  .playa-img1 {
+    display: none;
+  }
+  .parques-img1 {
+    display: none;
+  }
+  .rio-img2 {
+    margin-top: -100px;
+  }
+  .playa-img2 {
+    margin-top: -100px;
+  }
+  .parques-img2 {
+    margin-top: -100px;
+  }
+  #playas {
+    background:var(--color-body2);
+  }
+  .playa-desc,
+  .rio-desc,
+  .parques-desc {
+    text-align: center;
     width: 100%;
-    color:var(--color-de-fuentes);
-    font-size: 16px;
-}
-/* Media Queris */
-@media (min-width:479px){
-    contenedor-contacto{
-        display: none;
-    }    
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
 
+  main img {
+    margin: 0 20% 0 20%;
+    width: 230px;
+    height: 170px;
+  }
+  .contenedor-contacto {
+    display: inline-block;
+    width: 100%;
+  }
+  #contacto {
+    justify-content: center;
+    margin-left: 47px;
+  }
+  .formulario {
+    margin-left: 47px;
+  }
+}
+@media (min-width: 480px) and (max-width: 1024px) {
+  body {
+    background: var(--color-body1);
+  }
+  h1 {
+    font-size: 25px;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;}
+  .descripcion-img-titulo {
+    height: 100px;
+    width: 550px;
+    text-align: center;
+    top: 14%;
+  }
+  .titulo h2 {
+    font-size: 30px;
+  }
+  .titulo p {
+    font-size: 17px;
+  }
+  .main-contenedor {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .rio-img1 {
+    display: none;
+  }
+  .playa-img1 {
+    display: none;
+  }
+  .parques-img1 {
+    display: none;
+  }
+  .rio-img2 {
+    float: right;
+   
+  }
+  .playa-img2 {
+    float: right;
+   
+  }
+  .parques-img2 {
+    float: right;
+    position: relative;
+   
+  }
+  #playas {
+    background: var(--color-body2);
+  }
+  .playa-desc,
+  .rio-desc,
+  .parques-desc {
+    float: left;
+    position: absolute;
+    text-align: center;
+    font-size: 33px;
+  }
+  main img {
+    width: 280px;
+    height: 220px;
+  }
+}
+
+@media (min-width: 1025px) {
+  body {
+    background: var(--color-body1);
+  }
+  .descripcion-img-titulo {
+      top: 17%;
+      height: 130px;
+      width: 650px;
+  }
+  .titulo h2 {
+    font-size: 40px;
+  }
+  .titulo p {
+    font-size: 24px;
+  }
+  main{
+    
+    margin: auto;
+    
+  }
+  #playas{
+    background: var(--color-body2);
+  }
+  main img {
+    width: 270px;
+    height: 230px;
+  }
+  .rio-img1 {
+    display: inline-block;
+    position: relative;
+    left: 17%;
+    
+  }
+  .playa-img1 {
+    display: inline-block;
+    position: relative;
+    left: 17%;
+    
+  }
+  .parques-img1 {
+    display: inline-block;
+    position: relative;
+    left: 17%;
+  }
+  .rio-img2 {
+    display: inline-block;
+    position: relative;
+    left:48%;
+  }
+  .playa-img2 {
+    display: inline-block;
+    position: relative;
+    left: 48%;
+  }
+  .parques-img2 {
+    display: inline-block;
+    position: relative;
+    left: 48%;
+  }
+  .playa-desc,
+  .rio-desc,
+  .parques-desc {
+
+    display:inline-block;
+    position: absolute;
+    text-align: center;
+    width: 60%;
+  }
+  h3 {
+    font-size: 80px;
+  }
+  .playa-desc,
+  .rio-desc,
+  .parques-desc p {
+    font-size: 23px;
+  }
+ 
+  main img:hover {
+    filter: saturate(1);
+    width: 290px;
+    height: 250px;
+    transition-duration: 0.3s;
+  }
+  nav a:hover {
+    color: #000;
+    text-decoration: overline;
+  }
 }
