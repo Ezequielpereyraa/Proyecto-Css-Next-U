@@ -21,6 +21,30 @@
     <title>Tu Campamento</title>
   </head>
   <body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDlIFZEWcgnlatuJRH8JkXhqiVxvwp0VKM",
+    authDomain: "tu-campamento.firebaseapp.com",
+    databaseURL: "https://tu-campamento.firebaseio.com",
+    projectId: "tu-campamento",
+    storageBucket: "tu-campamento.appspot.com",
+    messagingSenderId: "872843242567",
+    appId: "1:872843242567:web:699d6075431f8e76989562",
+    measurementId: "G-ZYRS6NKBTD"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="index.js"></script>
     <header>
       <nav>
         <h1>Tu Campamento</h1>
