@@ -33,7 +33,7 @@ nav {
 }
 .descripcion-img-titulo {
   background: var(--color-fondo-desc);
-  height: 100px;
+  height: 150px;
   width: 800px;
   border-radius: 30px;
   position: absolute;
@@ -72,8 +72,8 @@ main img {
   border-radius: 50px;
 }
 
-.main-contenedor img {
-  opacity: 0.8;
+main img {
+  opacity: 0.7;
 }
 /* Seccion Contacto */
 .contenedor-contacto {
@@ -135,13 +135,16 @@ footer {
   padding: 20px;
   background: var(--color-bg);
   color: var(--color-de-fuentes);
-  height: 30px;
+  height: 70px;
   text-align: center;
 }
-footer a {
+footer a{
   text-decoration: none;
   list-style: none;
   color: var(--color-de-fuentes);
+}
+footer p{
+  font-size: 25px;
 }
 /* Media Queries */
 @media (min-width: 320px) and (max-width: 480px)  {
@@ -231,10 +234,10 @@ footer a {
     justify-content: center;
     font-size: 16px;}
   .descripcion-img-titulo {
-    height: 100px;
-    width: 550px;
+    height: 120px;
+    width: 470px;
     text-align: center;
-    top: 14%;
+    top: 24%;
   }
   .titulo h2 {
     font-size: 30px;
@@ -290,9 +293,9 @@ footer a {
     background: var(--color-body1);
   }
   .descripcion-img-titulo {
-      top: 17%;
-      height: 130px;
-      width: 650px;
+      top: 30%;
+      height: 180px;
+      width: 700px;
   }
   .titulo h2 {
     font-size: 40px;
@@ -309,61 +312,19 @@ footer a {
     background: var(--color-body2);
   }
   main img {
-    width: 240px;
-    height: 200px;
+    width: 270px;
+    height: 230px;
   }
-  .rio-img1 {
-    display: inline-block;
-    position: relative;
-    left: 17%;
-    
+ 
+  div h3 {
+    font-size: 100px;
   }
-  .playa-img1 {
-    display: inline-block;
-    position: relative;
-    left: 17%;
-    
-  }
-  .parques-img1 {
-    display: inline-block;
-    position: relative;
-    left: 17%;
-  }
-  .rio-img2 {
-    display: inline-block;
-    position: relative;
-    left:48%;
-  }
-  .playa-img2 {
-    display: inline-block;
-    position: relative;
-    left: 48%;
-  }
-  .parques-img2 {
-    display: inline-block;
-    position: relative;
-    left: 48%;
-  }
-  .playa-desc,
-  .rio-desc,
-  .parques-desc {
-
-    display:inline-block;
-    position: absolute;
-    text-align: center;
-    width: 60%;
-  }
-  h3 {
-    font-size: 80px;
-  }
-  .playa-desc,
-  .rio-desc,
-  .parques-desc p {
-    font-size: 23px;
+  div p {
+    font-size: 24px;
   }
  
   main img:hover {
-    filter: saturate(1);
+    filter: saturate(2);
     width: 290px;
     height: 250px;
     transition-duration: 0.3s;

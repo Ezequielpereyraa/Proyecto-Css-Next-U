@@ -18,40 +18,21 @@
       href="https://fonts.googleapis.com/css?family=Boogaloo|Magra&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  
     <title>Tu Campamento</title>
   </head>
   <body>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-analytics.js"></script>
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyDlIFZEWcgnlatuJRH8JkXhqiVxvwp0VKM",
-    authDomain: "tu-campamento.firebaseapp.com",
-    databaseURL: "https://tu-campamento.firebaseio.com",
-    projectId: "tu-campamento",
-    storageBucket: "tu-campamento.appspot.com",
-    messagingSenderId: "872843242567",
-    appId: "1:872843242567:web:699d6075431f8e76989562",
-    measurementId: "G-ZYRS6NKBTD"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
-<script src="index.js"></script>
-    <header>
-      <nav>
-        <h1>Tu Campamento</h1>
+    <header> 
+      <nav class="fixed-top d-flex ">  
+          <h1 class="flex-grow-1 ml-4">Tu Campamento</h1>
+          <div class="mr-4">
         <a href="#rio" class="nav-enlaces">Rio</a>
         <a href="#playas" class="nav-enlaces">Playas</a>
         <a href="#parques" class="nav-enlaces">Parques</a>
         <a href="#contacto" class="nav-enlaces">Contacto</a>
+      </div>
       </nav>
     </header>
     <section class="titulo">
@@ -63,43 +44,42 @@
         <p><em>Escoge lugar, tiempo y te llevamos </em></p>
       </div>
     </section>
-    <main class="main-contenedor">
-      <div id="rio">
-        <div class="rio-img1">
-          <img class="img" src="Imagenes/rio1.jpg" alt="" />
+    <main class="container text-center">
+      <div class="row mb-5">
+        <div class="rio-img1 col-4">
+          <img src="Imagenes/rio1.jpg" alt="">
         </div>
-        <div class="rio-desc">
-          <h3>Ríos</h3>
-          <p>Quedate en un Campamento <br> y disfruta del Rio</p>
+        <div class="rio-desc col-4">
+          <h3>Rios</h3>
+          <p>Te Llevamos a todos los Rios</p>
         </div>
-        <div class="rio-img2">
-          <img class="img" src="Imagenes/rio2.jpg" alt="" />
+        <div class="rio-img2 col-4">
+          <img src=" Imagenes/rio2.jpg" alt="">
         </div>
       </div>
-     <div id="playas">
-         <div class="playa-img1">
-             <img src="Imagenes/playa1.jpg" alt="">
-         </div>
-         <div class="playa-desc">
-             <h3>Playas</h3>
-             <p>Ve a la playa por una semana</p>
-         </div>
-         <div class="playa-img2">
-             <img src="Imagenes/playa2.jpg" alt="">
-         </div>
+     <div class="row mb-5">
+        <div class="playa-img1 col-4">
+          <img src="Imagenes/playa1.jpg" alt="">
+        </div>
+        <div class="playa-desc col-4">
+          <h3>Playas</h3>
+          <p>Ve a la Playa al Menos una Semana y Disfruta</p>
+        </div>
+        <div class="playa-img2 col-4">
+          <img src="Imagenes/playa2.jpg" alt="">
+        </div>
      </div>
-     <div id="parques">
-         <div class="parques-img1">
-             <img src="Imagenes/parque1.jpg" alt="">
-         </div>
-         <div class="parques-desc">
-             <h3>Parques</h3>
-             <p>Paseos de un dia <br> a los mejores parques</p>
-         </div>
-         <div class="parques-img2">
-             <img src="Imagenes/parque2.jpg" alt="">
-         </div>
-         
+     <div class="row mb-5">
+        <div class="parques-img1 col-4">
+          <img src="Imagenes/parque1.jpg" alt="">
+        </div>
+        <div class="parques-desc col-4">
+          <h3>Parques</h3>
+          <p>Excursiones a los mejores Parques</p>
+        </div>
+        <div class="parques-img2 col-4">
+          <img src="Imagenes/parque2.jpg" alt="">
+        </div>
      </div>
     </main>
     <div class="contenedor-contacto">
@@ -119,22 +99,41 @@
       <section class="formulario">
         <form action="formulario">
           <legend>FORMULARIO DE CONTACTO</legend>
-          <p>
-            <label for="email">Email</label><br />
-            <input type="email" required  /><br />
-          </p>
-          <p>
-            <label for="descripcion">Mensaje</label><br />
-            <textarea name="" id="" cols="30" rows="10"></textarea><br />
-          </p>
-          <input type="submit"  value="Enviar" />
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <i class="fas fa-user input-group-text"></i>
+            </div>
+            <input type="text" class="form-control text-primary" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1" required>
+          </div>
+          <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                  <i class="fas fa-pencil-alt input-group-text"></i>
+              </div>
+              <textarea cols="30" rows="10" class="form-control text-primary" placeholder="Escribe tu Mensaje" required></textarea>
+            </div>
+         
+          <button class="btn btn-outline-primary btn-block">
+            Enviar
+          </button>
         </form>
       </section>
     </div>
-    <footer>
-     <p>
-            Designed by <a href="https://twitter.com/EzhePereyra" target="blank">@Ezequiel Pereyra</a>
-     </p> 
+    <footer>      
+         <div class="d-flex justify-content-center">
+           <div class="pr-4">Designed by Ezequiel Pereyra</div> 
+        <div class="pr-4">
+          <a href="https://www.facebook.com/Ezequielpereyra24" target="_blank"><i class="fab fa-facebook-f" ></i></a>
+        </div>
+        <div class="pr-4">
+          <a href="https://twitter.com/EzhePereyra" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="pr-4">
+          <a href="https://www.instagram.com/ezepereyrag/" target="_blank" ><i class="fab fa-instagram"></i></a>
+        </div>
+      
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
